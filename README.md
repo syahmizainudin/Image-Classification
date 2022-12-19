@@ -50,15 +50,13 @@ Transfer learning is used in the creation of this project to speed up the traini
 > The model is saved into a h5 file to be loaded for deployment.
 
 ## Results
-The classification report created with the prediction made by the model can be seen below. The model scored 100% in all F1-score and accuracy. The model might be too complex for the datasets provided and it might be better to consider a custom model instead of using a pretrained model.
+The classification report created with the prediction made by the model can be seen below. The model scored 96% and 97% in F1-score and 97% in accuracy.
 
 <p><br></p>
 <p align="center">
   <img src="resources/classification_report.png" width=400" /><br>
   Classification report for the prediction made by the model.
 </p>  
-
-The model needs to be investigated and researched further in order to ascertain whether it is truly able to accurately predict the cement cracks or not.
 
 ## Usage steps
 > To run the python file, you need to download the dataset from [here](https://data.mendeley.com/datasets/5y9wdsg2zt/2) and extract it into a new folder named dataset in the project path. The path of the dataset folder should be <PROJECT_PATH>/dataset/Concrete Crack Images for Classification/.
