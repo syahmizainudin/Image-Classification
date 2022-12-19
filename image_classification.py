@@ -14,7 +14,7 @@ from keras.callbacks import EarlyStopping, TensorBoard, ReduceLROnPlateau, Model
 from sklearn.metrics import classification_report
 
 # %% 1. Data loading
-DATASET_PATH = os.path.join(os.getcwd(), 'dataset')
+DATASET_PATH = os.path.join(os.getcwd(), 'dataset', 'Concrete Crack Images for Classification')
 IMAGE_SIZE = (128, 128)
 BATCH_SIZE = 64
 SEED = 12345
@@ -118,7 +118,7 @@ image_batch, label_batch = test_pf.as_numpy_iterator().next()
 y_pred = np.argmax(model.predict(image_batch), axis=1)
 
 # Classification report
-print('Classifcation report:\n', classification_report(label_batch, y_pred))
+print('Classification report:\n', classification_report(label_batch, y_pred))
 
 # %% Model saving
 # Save model
