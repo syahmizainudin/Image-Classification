@@ -60,6 +60,9 @@ The classification report created with the prediction made by the model can be s
 
 The project needs to be investigated and researched further in order to ascertain whether it is truly able to accurately predict the cement cracks or not.
 
+## Usage steps
+> To run the python file, you need to download the dataset from [here](https://data.mendeley.com/datasets/5y9wdsg2zt/2) and extract it into a new folder named dataset in the project path. The path of the dataset folder should be <PROJECT_PATH>/dataset/Concrete Crack Images for Classification/.
+
 ## Model Architecture
 
 <p><br></p>
