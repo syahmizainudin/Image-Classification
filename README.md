@@ -12,11 +12,11 @@ Transfer learning is used in the creation of this project to speed up the traini
 
 ### Step 1 - Data loading  
 
-> The image dataset obtained from [Çağlar Fırat Özgenel](https://data.mendeley.com/datasets/5y9wdsg2zt/2) is loaded into the project and split between training and valiadtion at a ratio of 80:20 using keras.
+> The image dataset obtained from [Çağlar Fırat Özgenel](https://data.mendeley.com/datasets/5y9wdsg2zt/2) is loaded into the project and split between training and validation at a ratio of 80:20 using Keras.
   
 ### Step 2 - Data inspection  
 
-> A few images from the train dataset is displayed to make sure that the images are loaded properly.
+> A few images from the train dataset are displayed to make sure that the images are loaded properly.
 
 <p align="center">
   <img src="resources/sample_image.png" height=600/><br>
@@ -25,7 +25,7 @@ Transfer learning is used in the creation of this project to speed up the traini
 
 ### Step 3 - Data preparation  
 
-> The validation dataset is split again into a validation and test dataset. All three datasets are then converted into Prefetch Dataset. An image augmentation layer is then defined with random flip, random rotation and random zoom function. The image augmentation layer is then tested by applying it to an image and displaying the image after it had been augmented.
+> The validation dataset is split again into a validation and test dataset. All three datasets are then converted into Prefetch Dataset. An image augmentation layer is then defined with random flip, random rotation, and random zoom function. The image augmentation layer is then tested by applying it to an image and displaying the image after it had been augmented.
 
 <p align="center">
   <img src="resources/image_augmentation.png" height=600/><br>
@@ -34,7 +34,7 @@ Transfer learning is used in the creation of this project to speed up the traini
 
 ### Step 4 - Model development  
 
-> MobileNetV2 is used as the base model for the project. The prepocess input for the MobileNetV2 is used as the normalization layer precede by the image augmentation layer that was created in the previous step. A classifier with a GlobalAveragePooling2D, a Dropout layer and a Dense layer is made to classify the output obtain from the base model. Three callbacks function are used during the model training namely, TensorBoard, EarlyStopping, ReduceLROnPlateau and ModelCheckpoint. The training process of the model is monitored through TensorBoard.
+> MobileNetV2 is used as the base model for the project. The preprocess input for the MobileNetV2 is used as the normalization layer precede by the image augmentation layer that was created in the previous step. A classifier with a GlobalAveragePooling2D, a Dropout layer, and a Dense layer is made to classify the output obtained from the base model. Three callback functions are used during the model training namely, TensorBoard, EarlyStopping, ReduceLROnPlateau, and ModelCheckpoint. The training process of the model is monitored through TensorBoard.
 
 <p align="center">
   <img src="resources/training_accuracy.png" width=1000/><br>
@@ -47,7 +47,7 @@ Transfer learning is used in the creation of this project to speed up the traini
 
 ### Step 6 - Model saving
 
-> The model is saved into a h5 file to be loaded for deployment.
+> The model is saved into an h5 file to be loaded for deployment.
 
 ## Results
 The classification report created with the prediction made by the model can be seen below. The model scored 96% and 97% in F1-score and 97% in accuracy.
@@ -59,7 +59,8 @@ The classification report created with the prediction made by the model can be s
 </p>  
 
 ## Usage steps
-> To run the python file, you need to download the dataset from [here](https://data.mendeley.com/datasets/5y9wdsg2zt/2) and extract it into a new folder named dataset in the project path. The path of the dataset folder should be <PROJECT_PATH>/dataset/Concrete Crack Images for Classification/.
+> To run the python file, you need to download the dataset from [here](https://data.mendeley.com/datasets/5y9wdsg2zt/2) and extract it into a new folder named dataset in the project path.   
+> The path of the dataset folder should be **<PROJECT_PATH>/dataset/Concrete Crack Images for Classification/**
 
 ## Model Architecture
 
