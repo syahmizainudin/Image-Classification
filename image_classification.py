@@ -14,7 +14,7 @@ from keras.callbacks import EarlyStopping, TensorBoard, ReduceLROnPlateau, Model
 from sklearn.metrics import classification_report
 
 # %% 1. Data loading
-DATASET_PATH = os.path.join(os.getcwd(), 'dataset', 'Concrete Crack Images for Classification')
+DATASET_PATH = os.path.join(os.getcwd(), 'dataset')
 IMAGE_SIZE = (128, 128)
 BATCH_SIZE = 64
 SEED = 12345
